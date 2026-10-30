@@ -1,0 +1,638 @@
+
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e7eef5;background:#060b12}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 55% -25%,#173242 0,transparent 62%),#070c13;min-height:100vh}main{max-width:1380px;margin:auto;padding:19px 22px 30px}button,input{font:inherit}button{cursor:pointer}header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;gap:12px}h1{font-size:20px;letter-spacing:.12em;margin:0;font-weight:850}.branddot{color:#4cf4cc}.sub{color:#8899ad;font-size:12px}.tag{border:1px solid #25485a;color:#68ecd4;background:#0c292e;border-radius:30px;padding:8px 12px;font-size:11px;font-weight:700;white-space:nowrap}.workspace{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,1fr);gap:14px}.panel{background:#101923;border:1px solid #233543;border-radius:18px;padding:20px;min-width:0}.hero{position:relative;overflow:hidden;background:linear-gradient(155deg,#101d29,#0b121d 73%);min-height:500px;isolation:isolate}.hero:before{content:"";position:absolute;width:500px;height:500px;left:50%;top:12px;transform:translateX(-50%);background:radial-gradient(circle,#10cdaa0e,transparent 69%);pointer-events:none;z-index:0}.hero-bg,.hero-vignette,.hero-fade,.hero-content{position:absolute;inset:0}.hero-bg{z-index:0;pointer-events:none}.hero-bg img{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:min(92%,1320px);height:auto;object-fit:contain;object-position:center;filter:drop-shadow(0 18px 40px rgba(0,0,0,.45)) saturate(1.02) contrast(1.02);image-rendering:auto}.hero-vignette{z-index:0;pointer-events:none;background:radial-gradient(circle at 50% 52%,rgba(10,18,28,0) 0%,rgba(10,18,28,.06) 34%,rgba(7,12,18,.34) 62%,rgba(5,8,13,.82) 100%),linear-gradient(180deg,rgba(6,10,16,.34) 0%,rgba(6,10,16,.06) 20%,rgba(6,10,16,.08) 58%,rgba(6,10,16,.55) 100%)}.hero-fade{z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,12,18,.12) 0%,rgba(7,12,18,0) 18%,rgba(7,12,18,0) 62%,rgba(7,12,18,.22) 100%)}.hero-content{position:relative;z-index:1;display:flex;flex-direction:column;height:100%}.topline{display:flex;justify-content:space-between;align-items:center;gap:10px}.eyebrow{letter-spacing:.17em;color:#8da3b6;font-size:11px;font-weight:750}.state{color:#5aebc8;font-size:12px;font-weight:800}.dial{height:265px;width:min(100%,500px);margin:12px auto 0;position:relative;display:flex;align-items:center;justify-content:center}.dial svg{position:absolute;inset:0;width:100%;height:100%}.dialdata{position:relative;text-align:center;margin-top:29px}.rpm{font-size:clamp(62px,8vw,106px);font-weight:800;letter-spacing:-.08em;line-height:1;font-variant-numeric:tabular-nums}.rpmlabel{font-size:12px;letter-spacing:.16em;color:#94a8b7;margin-top:5px}.stateLine{font-size:12px;color:#64efcb;margin-top:13px;text-transform:uppercase}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:5px}.stat{padding:14px 10px;background:#0c141e;border:1px solid #213341;border-radius:12px;text-align:center}.stat strong{display:block;color:white;font-size:clamp(24px,2.8vw,35px);font-variant-numeric:tabular-nums;margin:6px 0 2px}.green{color:#65f4d1}.controls{display:flex;align-items:center;gap:10px;margin-top:17px;flex-wrap:wrap}.primary{flex:1;background:#64eac7;border:1px solid #64eac7;color:#071c20;border-radius:10px;padding:16px 17px;font-weight:850;letter-spacing:.05em;font-size:15px}.primary.off{background:#ffc6a3;border-color:#ffc6a3;color:#391b13}.secondary{background:#192937;border:1px solid #345064;color:#dae6f0;padding:13px 14px;border-radius:10px;font-size:13px}.status{font-size:12px;color:#9db1c0;margin-top:12px;line-height:1.55;min-height:18px}.side{display:flex;flex-direction:column;gap:14px}.section-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px}.section-title strong{font-size:15px}.modes{display:grid;grid-template-columns:1fr 1fr;gap:9px}.modes button{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;min-height:67px;text-align:left;background:#0b141e;color:#cfdde8;border:1px solid #273b48;border-radius:12px;padding:11px 13px;font-weight:730;font-size:13px}.modes button:before{content:'◈';font-size:13px;color:#4f7e91}.modes button.active{background:linear-gradient(135deg,#17383a,#0c232b);border-color:#53daba;color:white}.modes button.active:before{color:#70f7d4}.modes button small{font-size:10px;color:#8698a8;font-weight:500}.flex{display:flex;justify-content:space-between;align-items:center;gap:10px}.row{margin-top:17px}.row label{font-size:13px}.row b{font-size:13px;color:#60eac8}input[type=range]{width:100%;accent-color:#65edd0;margin-top:13px}.mini{color:#90a4b5;font-size:11px;line-height:1.6}.gps-dashboard{margin-top:14px}.gps-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:13px 0}.gps-stats>div{background:#0b141d;border:1px solid #1f3340;padding:11px;border-radius:10px;min-width:0}.gps-stats strong{display:block;color:#b9f4e4;font-size:17px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:6px 0}.gps-stats small{display:block;color:#70889b;font-size:10px}.notice{color:#95a9ba;font-size:12px;line-height:1.65}.details{margin-top:14px}.details summary{cursor:pointer;font-size:13px;font-weight:750;color:#cbdce6;padding:10px 0}.details .panel{margin-top:10px}footer{color:#7891a1;font-size:11px;padding:18px 0;line-height:1.5}.topline,.stats,.controls,.status{position:relative}.topline{padding:2px 0}.dial{z-index:1}.dial svg path:first-child{stroke:rgba(53,78,95,.9)}.dialdata{text-shadow:0 4px 20px rgba(0,0,0,.45)}.stats .stat{background:rgba(10,20,30,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-color:rgba(79,110,126,.38)}.controls .primary,.controls .secondary{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}.controls .secondary{background:rgba(20,38,52,.82)}.hero .status{padding:8px 12px;border-radius:10px;background:rgba(8,16,24,.46);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}.hero .section-glow{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:min(72%,760px);height:140px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(92,233,203,.10) 0%,rgba(92,233,203,.02) 42%,rgba(92,233,203,0) 72%);pointer-events:none;z-index:0}@media (min-width:850px) and (orientation:landscape){.hero-bg img{width:min(90%,1180px);top:54%}.stats{margin-top:auto}.hero .status{margin-top:10px}}@media (max-width:850px){.hero-bg img{width:112%;top:58%;opacity:.92}.hero-vignette{background:radial-gradient(circle at 50% 56%,rgba(10,18,28,0) 0%,rgba(10,18,28,.08) 28%,rgba(7,12,18,.44) 62%,rgba(5,8,13,.88) 100%),linear-gradient(180deg,rgba(6,10,16,.24) 0%,rgba(6,10,16,.05) 18%,rgba(6,10,16,.10) 60%,rgba(6,10,16,.64) 100%)}}@media(max-width:850px){main{padding:12px}.workspace{grid-template-columns:1fr}.hero{min-height:430px}.dial{height:240px}.panel{padding:15px}}@media(max-width:470px){.stats{gap:6px}.stat{padding:10px 4px}.stat strong{font-size:24px}.modes{grid-template-columns:1fr 1fr}.gps-stats{grid-template-columns:repeat(2,1fr)}header .tag{font-size:9px;padding:6px}.rpm{font-size:66px}}
+
+/* V7: automotive touch-first cockpit, preserving existing audio/GPS engine. */
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}body{overscroll-behavior-y:contain}button,summary,input{touch-action:manipulation}button{min-height:54px;-webkit-tap-highlight-color:transparent;user-select:none}button:focus-visible,summary:focus-visible{outline:3px solid #67edd4;outline-offset:3px}button:active{transform:scale(.985)}.primary{min-height:68px;font-size:16px;border-radius:14px}.secondary{font-size:13px;font-weight:750;border-radius:12px}.modes button{min-height:78px;padding:12px 14px;font-size:15px}.modes button small{font-size:11px;line-height:1.35}.modes button:before{font-size:18px}.row{margin-top:16px}input[type=range]{height:36px;cursor:pointer;touch-action:pan-x}input[type=range]::-webkit-slider-thumb{width:28px;height:28px}.controls{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(2,minmax(0,.7fr));gap:10px}.controls button{min-width:0}.controls #start{grid-row:span 2}.status{font-size:13px}.tag{font-size:12px}.stat .sub{font-size:12px}.stat strong{font-size:clamp(25px,3vw,37px)}
+/* Wider embedded landscapes, including lower-resolution car displays */
+@media (min-width:850px) and (orientation:landscape){main{max-width:none;padding:10px 15px 16px}header{margin-bottom:10px}.workspace{grid-template-columns:minmax(0,1.16fr) minmax(340px,1fr);gap:10px}.side{gap:10px}.panel{padding:14px 16px;border-radius:16px}.hero{min-height:0}.dial{height:clamp(140px,31vh,260px);margin:3px auto 0}.dialdata{margin-top:19px}.rpm{font-size:clamp(54px,7.5vh,96px)}.stats{gap:8px;margin-top:0}.stat{padding:8px}.stat strong{font-size:clamp(23px,4vh,34px);margin:2px 0}.controls{margin-top:10px;gap:8px}.primary{min-height:62px}.secondary{min-height:52px}.section-title{margin-bottom:9px}.section-title strong{font-size:14px}.modes{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.modes button{min-height:65px;padding:8px 10px;font-size:13px}.modes button:before{display:none}.modes button small{font-size:10px}.row{margin-top:8px}.gps-stats{margin:9px 0}.gps-stats>div{padding:8px}.gps-stats strong{margin:4px 0}.gps-dashboard{margin-top:8px}.details{margin-top:10px}footer{padding:9px 0}}
+/* Extra short APTV windows: focus on core actions without micro-text */
+@media (min-width:850px) and (max-height:650px) and (orientation:landscape){.dial{height:155px}.rpm{font-size:59px}.stateLine{margin-top:6px}.stats{margin-top:-2px}.controls{grid-template-columns:1.35fr 1fr 1fr 1fr 1fr}.controls #start{grid-row:auto}.controls button{min-height:56px;padding:7px;font-size:12px}.controls .primary{font-size:13px}.modes button{min-height:60px}.gps-stats strong{font-size:15px}.gps-stats small{font-size:9px}.gps-stats>div{padding:7px}.row{margin-top:5px}.status{font-size:11px;margin-top:6px}.section-title{margin-bottom:7px}}
+/* Phone/tablet fallback */
+@media (max-width:849px){.workspace{grid-template-columns:1fr}.hero{min-height:0}.modes{grid-template-columns:repeat(3,minmax(0,1fr))}.controls{grid-template-columns:1fr 1fr}.controls #start{grid-column:1/-1;grid-row:auto}.controls #fullscreen{grid-column:1/-1}.modes button{min-height:78px}.gps-stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:530px){h1{font-size:16px}.tag{font-size:10px}.dial{height:205px}.rpm{font-size:64px}.panel{padding:13px}.modes{grid-template-columns:repeat(2,minmax(0,1fr))}.gps-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.controls{gap:8px}.secondary{font-size:12px;padding:10px}}
+@media (prefers-reduced-motion:reduce){button:active{transform:none}html{scroll-behavior:auto}}
+
+:root{
+  --accent:#01579B;
+  --accent-soft:#2aa8ff;
+  --accent-glow:rgba(42,168,255,.22);
+  --glass:rgba(8,18,31,.42);
+  --glass-strong:rgba(10,23,38,.58);
+  --glass-border:rgba(152,214,255,.18);
+  --text-soft:#a8bfd2;
+}
+body{
+  background:
+    radial-gradient(ellipse at 50% -8%, rgba(1,87,155,.26) 0%, rgba(1,87,155,.10) 26%, transparent 56%),
+    radial-gradient(circle at 84% 18%, rgba(41,121,255,.12) 0%, transparent 28%),
+    linear-gradient(180deg,#050b12 0%, #07111d 42%, #050912 100%);
+}
+.branddot,.green{color:var(--accent-soft)!important}
+h1{letter-spacing:.15em}
+.sub,.mini,.notice{color:var(--text-soft)}
+.tag{
+  border-color:rgba(42,168,255,.28)!important;
+  color:#d4efff;
+  background:linear-gradient(180deg,rgba(19,77,127,.38),rgba(7,29,48,.38));
+  box-shadow:0 8px 24px rgba(0,0,0,.16), inset 0 1px 0 rgba(255,255,255,.05);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+.panel{
+  background:linear-gradient(180deg,rgba(9,18,30,.82),rgba(7,14,24,.72));
+  border-color:rgba(111,177,220,.10);
+  box-shadow:0 18px 48px rgba(0,0,0,.26), inset 0 1px 0 rgba(255,255,255,.02);
+}
+.hero{
+  background:
+    radial-gradient(circle at 50% 48%, rgba(1,87,155,.14) 0%, rgba(1,87,155,.08) 18%, transparent 54%),
+    linear-gradient(160deg, #0b1520 0%, #08111a 55%, #060b12 100%);
+  min-height:560px;
+}
+.hero:before{background:radial-gradient(circle, rgba(42,168,255,.12), transparent 68%)}
+.hero-bg img{
+  width:min(94%,1260px)!important;
+  top:54%!important;
+  filter:drop-shadow(0 28px 58px rgba(0,0,0,.58)) saturate(1.04) contrast(1.03) brightness(1.01);
+}
+.hero-vignette{
+  background:
+    radial-gradient(circle at 50% 54%, rgba(7,15,25,0) 0%, rgba(7,15,25,.04) 25%, rgba(6,12,20,.22) 52%, rgba(3,7,11,.78) 100%),
+    radial-gradient(circle at 50% 34%, rgba(42,168,255,.08) 0%, transparent 32%),
+    linear-gradient(180deg, rgba(4,9,15,.44) 0%, rgba(4,9,15,.08) 17%, rgba(4,9,15,.08) 68%, rgba(4,9,15,.58) 100%);
+}
+.hero-fade{background:linear-gradient(180deg,rgba(8,14,22,.16) 0%, rgba(8,14,22,0) 22%, rgba(8,14,22,0) 65%, rgba(8,14,22,.20) 100%)}
+.section-glow{
+  width:min(78%,820px)!important;
+  height:180px!important;
+  background:radial-gradient(ellipse at center, rgba(42,168,255,.14) 0%, rgba(42,168,255,.04) 42%, rgba(42,168,255,0) 72%)!important;
+}
+.hero-content{
+  padding:2px;
+}
+.topline{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:16px 18px !important;
+  border:1px solid var(--glass-border);
+  background:linear-gradient(180deg, rgba(17,32,49,.30), rgba(8,18,31,.46));
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.05);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+.eyebrow{color:#d8edff;font-size:12px;letter-spacing:.20em}
+.state{
+  color:#b5e5ff;
+  background:rgba(1,87,155,.18);
+  border:1px solid rgba(74,176,255,.22);
+  padding:8px 12px;
+  border-radius:999px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+}
+.dial{
+  margin:8px auto -4px;
+  width:min(100%,560px);
+}
+#rpmArc{stroke:#29b6f6!important;filter:drop-shadow(0 0 8px rgba(41,182,246,.35))}
+.dialdata{
+  padding:22px 28px 16px;
+  border-radius:999px;
+  background:radial-gradient(circle at 50% 32%, rgba(16,29,45,.32), rgba(8,15,24,.08) 58%, rgba(8,15,24,0) 74%);
+}
+.rpm{color:#f2f8fd;text-shadow:0 6px 32px rgba(0,0,0,.55)}
+.rpmlabel,.stateLine{color:#c5ddee}
+.stats{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin-top:6px;
+}
+.stat{
+  background:linear-gradient(180deg, rgba(18,35,54,.28), rgba(7,16,27,.52))!important;
+  border:1px solid var(--glass-border)!important;
+  border-radius:18px;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 10px 26px rgba(0,0,0,.16), inset 0 1px 0 rgba(255,255,255,.04);
+}
+.stat .sub{color:#b8cad8}
+.stat strong{color:white}
+.controls{
+  margin-top:14px;
+  gap:12px;
+}
+.primary,.secondary,
+.modes button,
+.gps-stats>div,
+.hero .status,
+.row input[type=range],
+.details .panel{
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+.primary{
+  background:linear-gradient(180deg, rgba(42,168,255,.92), rgba(1,87,155,.90));
+  border:1px solid rgba(137,220,255,.22);
+  color:#f7fcff;
+  box-shadow:0 18px 34px rgba(1,87,155,.22), inset 0 1px 0 rgba(255,255,255,.15);
+}
+.primary.off{
+  background:linear-gradient(180deg, rgba(160,228,255,.92), rgba(27,126,200,.88));
+  border-color:rgba(137,220,255,.24);
+  color:#072033;
+}
+.secondary{
+  background:linear-gradient(180deg, rgba(18,35,54,.38), rgba(8,17,28,.60));
+  border:1px solid var(--glass-border);
+  color:#ebf7ff;
+  box-shadow:0 10px 24px rgba(0,0,0,.14), inset 0 1px 0 rgba(255,255,255,.04);
+}
+.hero .status{
+  margin-top:12px;
+  background:linear-gradient(180deg, rgba(18,35,54,.32), rgba(8,17,28,.50))!important;
+  border:1px solid rgba(112,177,220,.14);
+  color:#d7ebfb;
+}
+.section-title strong{letter-spacing:.04em;color:#f0f7fc}
+.modes button{
+  background:linear-gradient(180deg, rgba(18,35,54,.32), rgba(8,17,28,.52));
+  border:1px solid rgba(100,160,200,.16);
+  color:#ecf6fe;
+  box-shadow:0 10px 22px rgba(0,0,0,.10), inset 0 1px 0 rgba(255,255,255,.03);
+}
+.modes button:before{color:#79cbff}
+.modes button.active{
+  background:linear-gradient(180deg, rgba(24,66,101,.56), rgba(10,29,45,.72));
+  border-color:rgba(121,203,255,.34);
+  box-shadow:0 12px 28px rgba(1,87,155,.20), inset 0 1px 0 rgba(255,255,255,.05);
+}
+.modes button small{color:#aac5d8}
+input[type=range]{accent-color:#29b6f6}
+.gps-stats>div{
+  background:linear-gradient(180deg, rgba(18,35,54,.30), rgba(8,17,28,.54));
+  border:1px solid rgba(100,160,200,.16);
+  border-radius:14px;
+}
+.gps-stats strong{color:#d8efff}
+.details summary{color:#dcefff}
+footer{color:#8fb1c6}
+@media (min-width:850px) and (orientation:landscape){
+  .workspace{grid-template-columns:minmax(0,1.72fr) minmax(340px,1fr)!important;gap:14px!important}
+  .hero{min-height:580px}
+  .hero-content{padding:2px 2px 0}
+  .topline{max-width:560px}
+  .stats,.controls,.hero .status{max-width:700px}
+  .stats,.controls,.hero .status{margin-left:auto;margin-right:auto}
+  .stats{margin-top:-4px}
+}
+@media (max-width:850px){
+  .hero{min-height:510px}
+  .topline{padding:14px 14px!important;border-radius:16px}
+  .hero-bg img{width:120%!important;top:57%!important}
+  .stats{gap:9px}
+  .stat{border-radius:16px}
+}
+
+
+/* V10 Hero Focus Layout: reduce UI obstruction and spotlight VF7 */
+.hero{min-height:620px!important}
+.hero-bg img{width:min(98%,1340px)!important;top:48.5%!important;left:51%!important;filter:drop-shadow(0 34px 70px rgba(0,0,0,.62)) saturate(1.05) contrast(1.04) brightness(1.02)!important}
+.hero-vignette{background:radial-gradient(circle at 50% 50%, rgba(7,15,25,0) 0%, rgba(7,15,25,.02) 20%, rgba(6,12,20,.16) 50%, rgba(3,7,11,.76) 100%),radial-gradient(circle at 50% 35%, rgba(42,168,255,.10) 0%, transparent 30%),linear-gradient(180deg, rgba(4,9,15,.40) 0%, rgba(4,9,15,.08) 16%, rgba(4,9,15,.06) 66%, rgba(4,9,15,.52) 100%)!important}
+.hero-content{display:block!important;position:relative;height:100%;padding:0!important}
+.topline{position:absolute;top:18px;left:18px;right:auto;width:min(420px,calc(100% - 36px));z-index:3;padding:14px 16px!important}
+.dial{position:absolute;left:50%;bottom:145px;transform:translateX(-50%);width:min(56%,560px)!important;height:auto!important;margin:0!important;z-index:2}
+.dialdata{padding:16px 22px 10px!important;background:radial-gradient(circle at 50% 32%, rgba(10,20,34,.44), rgba(8,15,24,.12) 58%, rgba(8,15,24,0) 76%)!important}
+.rpm{font-size:clamp(58px,8vw,102px)!important}
+.stats{position:absolute;left:50%;bottom:82px;transform:translateX(-50%);width:min(74%,760px);z-index:3;margin:0!important}
+.controls{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);width:min(82%,860px);z-index:3;margin:0!important}
+.hero .status{position:absolute;left:18px;bottom:18px;width:min(360px,calc(100% - 36px));z-index:2;margin:0!important;background:linear-gradient(180deg, rgba(13,28,44,.42), rgba(8,17,28,.56))!important}
+.section-glow{bottom:136px!important;width:min(84%,960px)!important;height:220px!important;background:radial-gradient(ellipse at center, rgba(42,168,255,.16) 0%, rgba(42,168,255,.05) 40%, rgba(42,168,255,0) 74%)!important}
+.stats .stat,.controls .primary,.controls .secondary,.hero .status{box-shadow:0 18px 34px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.05)!important}
+@media (min-width:850px) and (orientation:landscape){.workspace{grid-template-columns:minmax(0,1.8fr) minmax(340px,1fr)!important}.topline{top:20px;left:20px;width:min(400px,calc(100% - 40px))}.dial{bottom:152px;width:min(54%,560px)!important}.stats{bottom:88px;width:min(70%,740px)}.controls{bottom:18px;width:min(76%,840px)}}
+@media (max-width:1100px){.hero{min-height:600px!important}.hero-bg img{width:104%!important;left:52%!important;top:49%!important}.dial{width:min(72%,560px)!important;bottom:168px}.stats{width:min(88%,820px);bottom:94px}.controls{width:min(92%,880px)}.hero .status{width:min(320px,calc(100% - 36px))}}
+@media (max-width:850px){.hero{min-height:640px!important}.hero-bg img{width:124%!important;top:40%!important;left:54%!important}.topline{top:12px;left:12px;width:calc(100% - 24px);padding:12px 14px!important}.dial{width:88%!important;bottom:205px}.stats{width:calc(100% - 24px);bottom:118px;grid-template-columns:repeat(3,1fr)!important}.controls{width:calc(100% - 24px);bottom:18px}.hero .status{display:none}.section-glow{bottom:180px!important}}
+@media (max-width:560px){.hero{min-height:660px!important}.hero-bg img{width:136%!important;top:38%!important;left:56%!important}.dial{bottom:230px;width:92%!important}.stats{bottom:138px;gap:8px}.controls{grid-template-columns:1fr 1fr!important}.controls #start{grid-column:1/-1;grid-row:auto!important}.controls #fullscreen{grid-column:1/-1}}
+
+
+/* V11 VF7 screen optimization */
+html,body{height:100%;overflow:hidden}
+body{-webkit-text-size-adjust:100%;touch-action:manipulation}
+main{
+  max-width:100vw!important;
+  height:100vh;
+  padding:12px 14px 10px!important;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+header{
+  margin-bottom:10px!important;
+  gap:10px;
+  flex:0 0 auto;
+}
+header .sub{font-size:11px}
+h1{font-size:18px!important}
+.workspace{
+  flex:1 1 auto;
+  min-height:0;
+  grid-template-columns:minmax(0,1.9fr) minmax(330px,390px)!important;
+  gap:12px!important;
+  overflow:hidden;
+}
+.hero{min-height:auto!important;height:100%;border-radius:22px}
+.side{
+  display:grid;
+  grid-template-rows:auto auto;
+  gap:12px;
+  min-height:0;
+  overflow:hidden;
+}
+.side>.panel{
+  padding:16px 16px 14px!important;
+}
+/* keep all important content visible without page scrolling */
+details.details{display:none!important}
+footer{display:none!important}
+.topline{width:min(380px,calc(100% - 28px))!important;top:14px!important;left:14px!important;padding:12px 14px!important}
+.dial{bottom:136px!important;width:min(52%,540px)!important}
+.stats{bottom:86px!important;width:min(72%,720px)!important;gap:10px!important}
+.stat{padding:14px 12px!important;min-height:86px}
+.stat strong{font-size:28px!important;line-height:1}
+.controls{bottom:14px!important;width:min(80%,820px)!important;gap:10px!important}
+.primary,.secondary,.modes button{
+  min-height:58px!important;
+  border-radius:18px!important;
+  font-size:15px!important;
+  font-weight:800!important;
+}
+.primary{min-height:62px!important}
+.controls button{padding:0 16px!important}
+.hero .status{display:none!important}
+.section-title{margin-bottom:10px!important}
+.section-title strong{font-size:14px!important}
+.modes{
+  grid-template-columns:1fr 1fr!important;
+  gap:10px!important;
+}
+.modes button{
+  min-height:68px!important;
+  padding:11px 12px!important;
+  text-align:left;
+}
+.modes button small{font-size:11px!important;margin-top:4px;display:block}
+.row{margin-top:12px!important}
+.row label,.flex b{font-size:12px!important}
+input[type=range]{height:22px!important}
+.gps-stats{gap:8px!important}
+.gps-stats>div{padding:12px 10px!important;min-height:78px}
+.gps-stats strong{font-size:24px!important;line-height:1}
+.mini{font-size:11px!important}
+.tag{font-size:10px!important;padding:6px 10px!important}
+.panel{border-radius:20px!important}
+/* Automotive landscape tuning */
+@media (min-width:1100px) and (max-height:900px){
+  .hero-bg img{width:min(96%,1300px)!important;top:48%!important}
+  .dial{bottom:126px!important;width:min(50%,520px)!important}
+  .stats{bottom:78px!important;width:min(68%,700px)!important}
+  .controls{bottom:12px!important;width:min(76%,800px)!important}
+  .primary,.secondary{min-height:54px!important}
+  .modes button{min-height:62px!important}
+  .gps-stats>div{min-height:72px}
+}
+@media (min-width:1200px){
+  .hero-bg img{width:min(97%,1320px)!important;top:47.8%!important}
+}
+@media (max-width:980px){
+  html,body{overflow:auto}
+  main{height:auto;overflow:visible}
+  .workspace{overflow:visible;grid-template-columns:1fr!important}
+  .side{grid-template-rows:auto auto}
+  details.details,footer{display:block!important}
+}
+@media (max-width:850px){
+  html,body{overflow:auto}
+  .hero{height:auto!important;min-height:640px!important}
+  .topline{width:calc(100% - 24px)!important;top:12px!important;left:12px!important}
+  .dial{bottom:196px!important;width:90%!important}
+  .stats{bottom:112px!important;width:calc(100% - 24px)!important}
+  .controls{bottom:12px!important;width:calc(100% - 24px)!important;grid-template-columns:repeat(2,1fr)!important}
+  .controls #start{grid-column:1/-1}
+  .side>.panel{padding:14px!important}
+  details.details,footer{display:block!important}
+}
+
+
+/* V12: audio-state always visible, even when compact driving layout hides diagnostics */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;border:0!important}
+.audio-box{margin-top:10px;border:1px solid rgba(61,171,239,.30);background:linear-gradient(160deg,rgba(13,41,66,.50),rgba(7,17,29,.70));border-radius:14px;padding:10px 12px;box-shadow:inset 0 1px 0 rgba(255,255,255,.04);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.audio-box-title{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:12px;font-weight:780;letter-spacing:.025em;color:#91d2fa}
+#audioState[data-kind="on"],#audioState[data-kind="ready"]{color:#6fd8ff}#audioState[data-kind="warn"]{color:#ffcb83}#audioState[data-kind="off"]{color:#b5c5d5}
+#webAudioState{font-size:10px;font-weight:720;opacity:.65}
+.audio-feedback{font-size:11px;line-height:1.35;color:#aac6da;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:28px}
+.audio-meter{height:3px;margin-top:9px;background:rgba(68,122,166,.28);border-radius:99px;overflow:hidden}.audio-meter span{height:100%;display:block;width:0;background:linear-gradient(90deg,#01579B,#40C4FF);border-radius:inherit;transition:width .1s}
+.studio-box{margin-top:12px}.studio-box label,.studio-box b{font-size:12px!important;font-weight:750;color:#b8d0e1}.studio-box input[type=range]{margin:4px 0 0!important;min-height:35px;touch-action:pan-x}
+.activeprofile{margin-top:8px!important}
+/* Sound profiles in a compact grid, so the audio diagnostic remains onscreen. */
+@media (min-width:981px) and (orientation:landscape){
+ .modes{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:7px!important}
+ .modes button{min-height:66px!important;padding:10px 8px!important;font-size:12px!important;line-height:1.18!important}
+ .modes button small{font-size:10px!important;line-height:1.2!important}
+ .side{overflow-y:auto!important;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#1c5481 transparent;grid-template-rows:min-content min-content!important}
+ .side>.panel{padding:12px 13px!important}
+ .side .row{margin-top:8px!important}
+ .gps-stats>div{padding:7px!important;min-height:60px!important}
+ .gps-stats strong{font-size:21px!important}
+ .gps-stats{margin:7px 0!important}
+ .audio-box{padding:8px 11px;margin-top:7px}
+ .studio-box{margin-top:7px}
+ .audio-feedback{min-height:26px;font-size:10px}
+ .section-title{margin-bottom:8px!important}
+}
+@media (max-height:620px) and (min-width:981px) and (orientation:landscape){
+ .side>.panel:nth-child(2){display:none}
+ .modes button{min-height:56px!important}
+ .audio-feedback{-webkit-line-clamp:1;min-height:13px}
+ .topline{padding:9px!important}
+ .stats{bottom:78px!important}
+ .stat{min-height:65px!important;padding:9px!important}
+}
+@media (max-width:980px){.audio-feedback{-webkit-line-clamp:3}.modes{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+/* Compact one-row bottom dock prevents RPM/stat overlap on landscape car displays. */
+@media (min-width:981px) and (orientation:landscape){
+ .controls{display:grid!important;grid-template-columns:minmax(0,1.7fr) repeat(4,minmax(0,.8fr))!important;align-items:stretch!important;gap:8px!important;width:calc(100% - 22px)!important;bottom:13px!important}
+ .controls #start{grid-row:auto!important;grid-column:auto!important}
+ .controls button{min-height:62px!important;padding:4px 7px!important;font-size:12px!important;line-height:1.15!important;border-radius:15px!important;letter-spacing:0!important}
+ .stats{bottom:94px!important;width:78%!important}
+ .dial{bottom:174px!important;width:min(51%,520px)!important}
+}
+@media (min-width:981px) and (max-height:620px) and (orientation:landscape){
+ .controls button{min-height:54px!important}
+ .stats{bottom:82px!important}
+ .dial{bottom:156px!important}
+}
+@media (max-width:980px){
+ html,body{height:auto!important;min-height:100%;overflow:auto!important}
+ main{height:auto!important;min-height:100vh;overflow:visible!important}
+ .workspace{display:grid!important;grid-template-columns:1fr!important;overflow:visible!important;min-height:0!important}
+ .hero{height:680px!important;min-height:680px!important}
+ .side{overflow:visible!important;display:flex!important;grid-template-rows:none!important}
+ .topline{max-width:420px}
+ .controls{bottom:14px!important}
+ .stats{bottom:136px!important}
+ .dial{bottom:220px!important}
+}
+@media (max-width:560px){
+ .hero{height:860px!important;min-height:860px!important}
+ .topline{max-width:none}
+ .stats{bottom:304px!important}
+ .dial{bottom:407px!important}
+ .controls{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .controls #start{grid-column:1/-1!important;grid-row:auto!important}
+}
+
+
+
+/* V13: subtle description without adding another panel */
+.studio-hint{font-size:10px;line-height:1.35;color:#94adbe;margin-top:-2px}
+@media (min-width:981px) and (max-height:680px){.studio-hint{display:none}}
+
+/* V14: Automotive touch layout, natural-flow dock instead of overlapping absolute panels. */
+.hero{isolation:isolate!important; padding:clamp(10px,1.1vw,16px)!important; overflow:hidden!important}
+.hero-content{
+  position:relative!important;inset:auto!important;height:100%!important;min-height:0!important;
+  display:grid!important;grid-template-columns:minmax(0,1fr)!important;
+  grid-template-rows:auto minmax(130px,1fr) auto auto!important;
+  gap:clamp(8px,1.1vh,13px)!important;
+  padding:0!important;align-items:stretch!important;
+}
+.hero .topline{
+  position:relative!important;inset:auto!important;transform:none!important;
+  width:max-content!important;max-width:100%!important;min-width:0!important;
+  margin:0!important;padding:10px 14px!important;
+  min-height:50px;align-self:start!important;z-index:2;
+}
+.hero .topline .eyebrow{font-size:clamp(10px,.94vw,12px)!important;line-height:1.25}
+.hero .topline .state{font-size:clamp(10px,.9vw,12px)!important;line-height:1.15!important;max-width:210px}
+.hero .dial{
+  position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;
+  transform:none!important;width:min(100%,420px)!important;max-width:420px!important;
+  height:100%!important;min-height:130px!important;max-height:290px!important;
+  margin:0 auto!important;align-self:center!important;z-index:2;
+}
+.hero .dial svg{width:100%;height:100%}
+.hero .dialdata{margin-top:clamp(8px,1.9vh,18px)!important;padding:10px 16px!important}
+.hero .rpm{font-size:clamp(48px,6.6vw,88px)!important}
+.hero .rpmlabel{font-size:clamp(9px,.9vw,12px)!important}
+.hero .stateLine{font-size:clamp(9px,.9vw,12px)!important;margin-top:7px!important}
+.hero .stats{
+  position:relative!important;inset:auto!important;transform:none!important;
+  width:100%!important;max-width:760px!important;margin:0 auto!important;z-index:3;
+  display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:clamp(6px,.8vw,10px)!important;
+}
+.hero .stats .stat{
+  padding:8px 10px!important;min-height:65px!important;display:flex!important;
+  flex-direction:column;justify-content:center;align-items:center;gap:1px;
+  border-radius:14px!important;
+}
+.hero .stat strong{font-size:clamp(23px,2.5vw,32px)!important;margin:2px 0!important}
+.hero .stat .sub{font-size:clamp(10px,.92vw,12px)!important;line-height:1.16}
+.hero .controls{
+  position:relative!important;inset:auto!important;transform:none!important;
+  width:100%!important;max-width:760px!important;margin:0 auto!important;z-index:4;
+  display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  grid-template-rows:clamp(48px,6vh,60px) clamp(42px,5.7vh,54px)!important;
+  align-items:stretch!important;gap:clamp(6px,.8vw,10px)!important;
+}
+.hero .controls #start{
+  grid-column:1 / -1!important;grid-row:1!important;
+  min-height:0!important;width:100%!important;padding:6px 12px!important;
+  font-size:clamp(14px,1.35vw,18px)!important;letter-spacing:.04em!important;
+  border-radius:15px!important;white-space:nowrap!important;
+}
+.hero .controls .secondary{
+  grid-row:2!important;grid-column:auto!important;
+  min-height:0!important;min-width:0!important;width:100%!important;
+  padding:5px 5px!important;border-radius:12px!important;
+  font-size:clamp(11px,1vw,13px)!important;line-height:1.12!important;
+  white-space:normal!important;word-break:normal;
+}
+.hero .controls #testTone{grid-column:1!important}
+.hero .controls #demoSound{grid-column:2!important}
+.hero .controls #retryGPS{grid-column:3!important}
+.hero .controls #fullscreen{grid-column:4!important}
+.label-short{display:none}
+.hero .status{display:none!important}
+/* Show car clearly in the central stage; softer dark edges preserve contrast. */
+.hero-bg img{top:43%!important;left:50%!important;width:min(104%,1350px)!important}
+.hero-vignette{background:radial-gradient(ellipse at 52% 44%,rgba(5,12,22,.01) 0%,rgba(5,12,22,.06) 35%,rgba(3,9,16,.5) 80%,rgba(2,7,12,.82) 100%),linear-gradient(180deg,rgba(4,9,15,.18),rgba(4,9,15,.04) 38%,rgba(4,9,15,.35) 88%,rgba(4,9,15,.64))!important}
+@media (min-width:981px) and (orientation:landscape){
+ .hero-content{grid-template-rows:auto minmax(110px,1fr) auto auto!important}
+ .hero .dial{max-height:270px!important}
+ .hero .controls{max-width:min(100%,720px)!important}
+ .hero .stats{max-width:min(100%,720px)!important}
+}
+@media (min-width:981px) and (max-height:680px) and (orientation:landscape){
+ .hero{padding:9px!important}
+ .hero-content{gap:7px!important;grid-template-rows:auto minmax(100px,1fr) auto auto!important}
+ .hero .topline{min-height:42px;padding:7px 10px!important}
+ .hero .dial{max-height:190px!important}
+ .hero .rpm{font-size:clamp(48px,5.1vw,68px)!important}
+ .hero .stat{min-height:54px!important;padding:6px!important}
+ .hero .controls{grid-template-rows:47px 41px!important;gap:6px!important}
+ .hero .controls .secondary{font-size:11px!important}
+}
+/* Tablet / embedded APTV may expose a narrow CSS viewport despite wide physical display. */
+@media (max-width:980px){
+ .hero{height:auto!important;min-height:0!important;padding:14px!important}
+ .hero-content{height:auto!important;grid-template-rows:auto clamp(225px,32vh,330px) auto auto!important;gap:12px!important}
+ .hero .dial{height:100%!important;max-height:320px!important;max-width:440px!important}
+ .hero .topline{width:max-content!important;max-width:100%!important}
+ .hero .controls{grid-template-rows:58px 50px!important}
+ .hero-bg img{top:40%!important;width:min(112%,1000px)!important}
+ .workspace{overflow:visible!important}
+}
+@media (max-width:600px){
+ .hero-content{grid-template-rows:auto 240px auto auto!important;gap:10px!important}
+ .hero-bg img{width:140%!important;top:40%!important}
+ .hero .dial{max-width:100%!important}
+ .hero .stats .stat{padding:8px 3px!important}
+ .hero .stats .stat strong{font-size:24px!important}
+ .hero .stats .stat .sub{font-size:10px!important}
+ .hero .controls{grid-template-rows:54px 46px!important;gap:6px!important}
+ .hero .controls .secondary{font-size:12px!important}
+ .label-long{display:none}
+ .label-short{display:inline}
+ .hero .topline{padding:9px 10px!important}
+ .hero .topline .state{max-width:155px;padding:6px 9px}
+}
+@media (max-width:370px){
+ .hero{padding:10px!important}
+ .hero-content{grid-template-rows:auto 215px auto auto!important;gap:8px!important}
+ .hero .controls .secondary{font-size:11px!important}
+}
+
+/* V15 – Immersive Hero: native photo edge-to-edge, compact unobstructed tachometer. */
+.hero{background:#0b121a!important}
+.hero-bg{position:absolute!important;inset:0!important;overflow:hidden!important;z-index:0}
+.hero-bg img{
+  position:absolute!important;inset:0!important;left:0!important;top:0!important;
+  transform:none!important;width:100%!important;height:100%!important;
+  max-width:none!important;max-height:none!important;
+  object-fit:cover!important;object-position:49% center!important;
+  filter:saturate(1.02) contrast(1.035) brightness(.95)!important;
+}
+.hero-vignette{
+  background:
+    radial-gradient(ellipse 86% 78% at 50% 44%, transparent 23%, rgba(5,12,20,.055) 52%,rgba(4,11,18,.37) 87%,rgba(3,9,17,.66) 100%),
+    linear-gradient(180deg,rgba(5,11,19,.34) 0%,rgba(5,11,19,.02) 18%,rgba(5,11,19,.01) 52%,rgba(4,10,18,.28) 70%,rgba(4,10,18,.80) 88%,rgba(3,9,16,.92) 100%)!important;
+}
+.hero-fade{background:linear-gradient(180deg,rgba(4,10,18,.06),transparent 28%,transparent 58%,rgba(4,10,18,.26) 77%,rgba(3,8,16,.44))!important}
+.hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(129,194,232,.14),inset 0 30px 70px rgba(5,13,24,.08),inset 0 -50px 120px rgba(2,9,16,.20)}
+.hero .topline{background:linear-gradient(140deg,rgba(9,22,36,.62),rgba(7,19,33,.32))!important;backdrop-filter:blur(13px);-webkit-backdrop-filter:blur(13px);box-shadow:0 10px 25px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.06)!important}
+.hero .hero-content{grid-template-rows:auto minmax(115px,1fr) auto auto!important}
+.hero .dial{
+  position:relative!important;align-self:end!important;justify-self:center!important;
+  width:min(100%,320px)!important;max-width:320px!important;
+  height:112px!important;min-height:0!important;max-height:112px!important;
+  margin:0 auto 3px!important;
+  background:radial-gradient(ellipse at 50% 66%,rgba(6,19,31,.48) 0%,rgba(7,22,36,.25) 43%,transparent 75%)!important;
+  border-radius:48%;
+}
+.hero .dial svg{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;overflow:visible!important;pointer-events:none}
+.hero .dialdata{
+  position:absolute!important;top:49px!important;left:0!important;right:0!important;
+  display:flex!important;flex-direction:column!important;align-items:center!important;
+  width:100%!important;height:auto!important;padding:0!important;margin:0!important;
+  text-align:center!important;background:none!important;text-shadow:0 3px 20px rgba(0,0,0,.70)!important;
+}
+.hero .rpm{font-size:clamp(43px,4.2vw,53px)!important;line-height:.95!important;letter-spacing:-.065em!important;color:#fff!important}
+.hero .rpmlabel{font-size:clamp(10px,.95vw,12px)!important;letter-spacing:.20em!important;margin-top:7px!important;color:#d8edff!important}
+.hero .stateLine{display:none!important}
+.hero #rpmArc{filter:drop-shadow(0 0 5px rgba(40,173,246,.24))!important}
+/* Keep information readable over fading photo; controls stay in a single-width dock. */
+.hero .stats{z-index:3!important;margin-top:1px!important}
+.hero .stats .stat{background:linear-gradient(180deg,rgba(8,25,39,.70),rgba(4,16,28,.82))!important;backdrop-filter:blur(17px);-webkit-backdrop-filter:blur(17px);border-color:rgba(105,170,204,.28)!important}
+.hero .controls{z-index:3!important}
+.hero .controls .secondary{background:linear-gradient(180deg,rgba(18,39,53,.80),rgba(10,26,39,.82))!important;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+@media (min-width:981px) and (orientation:landscape){
+  .hero .dial{width:min(100%,310px)!important;max-width:310px!important;height:108px!important;max-height:108px!important;margin-bottom:3px!important}
+  .hero .dialdata{top:46px!important}
+}
+@media (min-width:981px) and (max-height:680px) and (orientation:landscape){
+  .hero .dial{width:265px!important;height:95px!important;max-height:95px!important}
+  .hero .dialdata{top:40px!important}
+  .hero .rpm{font-size:40px!important}
+  .hero .rpmlabel{font-size:10px!important;margin-top:4px!important}
+}
+@media (max-width:980px){
+  .hero .dial{width:min(100%,300px)!important;max-width:300px!important;height:110px!important;max-height:110px!important;margin-bottom:6px!important}
+  .hero .dialdata{top:47px!important}
+  .hero .rpm{font-size:48px!important}
+  .hero-bg img{object-position:center center!important}
+}
+@media (max-width:600px){
+  .hero .dial{width:min(100%,260px)!important;max-width:260px!important;height:95px!important;max-height:95px!important;margin-bottom:2px!important}
+  .hero .dialdata{top:39px!important}
+  .hero .rpm{font-size:40px!important}
+  .hero .rpmlabel{font-size:9px!important;margin-top:4px!important}
+  .hero-bg img{object-position:48% center!important}
+  .hero-vignette{background:linear-gradient(180deg,rgba(4,10,17,.40),transparent 28%,rgba(4,10,17,.08) 54%,rgba(4,10,17,.66) 78%,rgba(4,10,17,.90) 100%),radial-gradient(ellipse at 50% 40%,transparent 35%,rgba(4,10,18,.50) 100%)!important}
+}
+
+/* V16: slightly larger RPM arc while preserving clean spacing */
+.hero .dial{
+  width:min(100%,338px)!important;
+  max-width:338px!important;
+  height:120px!important;
+  max-height:120px!important;
+  margin:0 auto 4px!important;
+}
+.hero .dialdata{top:50px!important}
+.hero .rpm{font-size:54px!important}
+@media (min-width:981px) and (max-height:680px) and (orientation:landscape){
+  .hero .dial{width:278px!important;height:100px!important;max-height:100px!important}
+  .hero .dialdata{top:42px!important}
+  .hero .rpm{font-size:42px!important}
+}
+@media (max-width:980px){
+  .hero .dial{width:min(100%,316px)!important;max-width:316px!important;height:116px!important;max-height:116px!important}
+  .hero .dialdata{top:49px!important}
+}
+@media (max-width:600px){
+  .hero .dial{width:min(100%,272px)!important;max-width:272px!important;height:100px!important;max-height:100px!important}
+  .hero .dialdata{top:41px!important}
+  .hero .rpm{font-size:42px!important}
+}
+
+
+/* V17: thicker tach arc */
+#rpmArc{stroke-width:14px!important;filter:drop-shadow(0 0 10px rgba(41,182,246,.42)) drop-shadow(0 0 18px rgba(41,182,246,.16))!important}
+.hero .dial svg path:first-child{stroke-width:14px!important;stroke:rgba(138,192,221,.33)!important}
+
+
+/* V18: the filled RPM arc travels from deep #01579B to luminous ice blue.
+   Progressive glow is quantized in JS to reduce frequent expensive repaints on APTV. */
+#rpmArc{stroke:url(#rpmGradient)!important;stroke-width:14px!important;filter:drop-shadow(0 0 3px rgba(41,182,246,.19))!important}
+#rpmTip,#rpmTipHalo{pointer-events:none;transition:opacity .12s linear}
+#rpmTip{filter:drop-shadow(0 0 4px rgba(185,242,255,.35))}
+@media (prefers-reduced-motion:reduce){#rpmTip,#rpmTipHalo{transition:none}}
+
+
+/* V19: double the V18 tachometer stroke without changing size or RPM math. */
+.hero .dial svg path:first-child{stroke-width:28px!important;stroke:rgba(138,192,221,.29)!important}
+.hero #rpmArc{stroke-width:28px!important;stroke:url(#rpmGradient)!important;filter:drop-shadow(0 0 4px rgba(41,182,246,.24)) drop-shadow(0 0 9px rgba(1,87,155,.14))!important}
+
+/* V20: cleaner cockpit hierarchy and compact diagnostics */
+.audio-feedback[hidden]{display:none!important;min-height:0!important;margin:0!important;padding:0!important}
+.audio-feedback:not([hidden]){display:block;min-height:0;margin-top:7px;color:#f3c58b}
+header h1{display:flex;align-items:center;gap:8px}
+
+/* V23 optional phone GPS bridge controls */
+.bridge-panel{padding:11px 12px 9px;margin:10px 0 6px;background:rgba(8,28,45,.48);border:1px solid rgba(71,151,203,.25);border-radius:14px;backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+.bridge-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px}.bridge-status{font-size:10px;color:#9ab5c6}.bridge-row{display:flex;align-items:center;gap:10px;margin-top:9px}.bridge-action{min-height:44px!important;padding:8px 12px!important;background:#01579b!important;border:1px solid rgba(110,189,239,.32)!important;border-radius:10px!important;color:#eef9ff!important;font-size:11px!important;flex:1;white-space:nowrap}.bridge-code{font-size:16px;letter-spacing:3px;color:#d2efff;font-weight:900;white-space:nowrap}.bridge-note{color:#93b4ca;font-size:10px;line-height:1.45;margin:8px 0 0}.bridge-note a{color:#61c6ff}.bridge-panel button:focus-visible{outline:2px solid #7dcfff;outline-offset:2px}
+@media(min-width:981px) and (max-height:740px){.bridge-panel{padding:8px 10px;margin:6px 0 2px}.bridge-heading{font-size:11px}.bridge-row{margin-top:5px}.bridge-note{display:none}.bridge-action{min-height:38px!important}.bridge-code{font-size:13px}}
+
+.bridge-panel{margin:5px 0 0!important;padding:4px 9px!important}.bridge-panel summary{cursor:pointer;list-style:none;min-height:32px;display:flex;align-items:center;color:#9dd6f6;font-size:11px;font-weight:700}.bridge-panel summary::-webkit-details-marker{display:none}.bridge-panel summary::before{content:"▸";margin-right:6px}.bridge-panel[open] summary::before{content:"▾"}.bridge-panel:not([open]) .bridge-row,.bridge-panel:not([open]) .bridge-note{display:none}.bridge-panel[open]{padding:9px 10px!important}.side{overflow-y:auto!important;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#2b4f67 transparent}
